@@ -6,7 +6,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.generics import ListCreateAPIView
 
 from .models import Advert
-from .serializers import AdvertSerializer
+from .serializer import AdvertSerializer
 
 class AdvertListCreateView(ListCreateAPIView):
     queryset = Advert.objects.all()
